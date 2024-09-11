@@ -16,4 +16,4 @@ I've used Chart.js and react-chartjs-2 render the charts efficiently, and I've a
 
 ## Future improvments
 
-Refactoring CustomChartToggleButtons would be one of my priorities. It works well, but the code for this component can be improved.
+Refactoring CustomChartToggleButtons would be one of my priorities. It works well, but the code for this component can be improved. I would also focus on enhancing the overall styling to make everything look more polished and smooth, including incorporating animations. Additionally, I'll work on improving the reports layout.
