@@ -20,7 +20,7 @@ const CustomSalesChartToggleButton = ({
   return (
     <div className="flex lg:flex-row flex-col justify-center gap-2 lg:gap-10 pb-6">
       <button
-        className={`${
+        className={`hover:opacity-50 ${
           toggle === 1 &&
           "lg:border-b-2 border-primary font-semibold text-primary"
         }`}
@@ -33,7 +33,7 @@ const CustomSalesChartToggleButton = ({
         Last 12 months
       </button>
       <button
-        className={`${
+        className={`hover:opacity-50 ${
           toggle === 2 &&
           "lg:border-b-2 border-primary font-semibold text-primary"
         }`}
@@ -57,7 +57,7 @@ const CustomSalesChartToggleButton = ({
         Last 6 months
       </button>
       <button
-        className={`${
+        className={`hover:opacity-50 ${
           toggle === 3 &&
           "lg:border-b-2 border-primary font-semibold text-primary"
         }`}
@@ -81,7 +81,7 @@ const CustomSalesChartToggleButton = ({
         Last 3 months
       </button>
       <button
-        className={`${
+        className={`hover:opacity-50 ${
           toggle === 4 &&
           "lg:border-b-2 border-primary font-semibold text-primary"
         }`}

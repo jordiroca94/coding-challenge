@@ -26,19 +26,19 @@ const CollapsibleItem = ({
 
   return (
     <div className="border-b border-primary">
-      <div
+      <button
         onClick={() => setOpenItem(!openItem)}
         className="flex justify-between items-center w-full py-4"
       >
         <h3 className="text-2xl lg:text-3xl text-primary">{name}</h3>
         <span
-          className={`h-2 w-5 ${
+          className={`h-2 w-5 text-primary ${
             openItem && "rotate-180 transform duration-500"
           }`}
         >
           {chevron}
         </span>
-      </div>
+      </button>
       {openItem && (
         <Grid>
           <CollapsibleItemDescription

@@ -12,6 +12,8 @@ import {
 import { Last12MonthsReviewsType, LastMonthReviewsType } from "@/types/common";
 import { useState } from "react";
 import CustomTrendsChartToggleButton from "./CustomTrendsChartToggleButtons";
+import jsPDF from "jspdf";
+import DownloadButton from "../ui/DownloadButton";
 
 ChartJS.register(
   CategoryScale,
@@ -36,6 +38,22 @@ const TrendsChart = ({ reviews_last_12_months, reviews_last_month }: Props) => {
     reviews_last_12_months.map((data) => data.rate)
   );
 
+  const generatePDF = () => {
+    // We pare chartData because our data are numbers
+    const parseData = chartData.map(String);
+    const doc = new jsPDF();
+
+    // Set up PDF content
+    doc.text("Average rating of customer reviews", 10, 10);
+    doc.text("Rate", 50, 20);
+
+    doc.text(chartLabels, 10, 30);
+    doc.text(parseData, 50, 30);
+
+    // Save the PDF
+    doc.save("customer-review-report.pdf");
+  };
+
   //We manage the data & labels we want to render on the chart with states, we change the data with CustomTrendsChartToggleButton
 
   return (
@@ -43,9 +61,13 @@ const TrendsChart = ({ reviews_last_12_months, reviews_last_month }: Props) => {
       <h4 className="text-2xl lg:text-3xl pb-1 text-pinkRose font-semibold">
         Customer Reviews Trend
       </h4>
-      <h5 className="font-light italic pb-2">
-        Average rating of customer reviews
-      </h5>
+      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-4">
+        <h5 className="font-light italic pb-2">
+          Average rating of customer reviews
+        </h5>
+        <DownloadButton onclick={generatePDF} />
+      </div>
+
       <Bar
         className="mb-10"
         options={{

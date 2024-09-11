@@ -5,6 +5,7 @@ import ReactStars from "react-rating-stars-component";
 type Props = {
   reviews?: ReviewType[];
 };
+
 const Reviews = ({ reviews }: Props) => {
   return (
     <div>
