@@ -2,18 +2,18 @@
 
 ## Setup and running instructions
 
-First install the dependencies with the command yarn install
+First, install the dependencies with the command yarn install
 
-After, run the development server with the command yarn dev
+Then, run the development server with the command yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) or the port you have available with your browser to see the result.
 
 ## What is about?
 
-I've created a responsive and interactive dashboard for an e-comerce ( wine store) using React & Typescript styled with Tailwind CSS.
+I've created a responsive and interactive dashboard for an e-commerce wine store using React and TypeScript, styled with Tailwind CSS.
 
-I've used chart.js & react-chartjs-2 in order to render the charts eficiently & i've also used react-rating-stars-component in order to render ratings stars for the Review component.
+I've used Chart.js and react-chartjs-2 render the charts efficiently, and I've also used react-rating-stars-component to display rating stars in the Review component.
 
 ## Future improvments
 
-Refactor CustomChartToggleButtons would be one of my priorities. It works pretty well, but the code of this component can be improved.
+Refactoring CustomChartToggleButtons would be one of my priorities. It works well, but the code for this component can be improved.
