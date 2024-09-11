@@ -12,7 +12,7 @@ Open [http://localhost:3000](http://localhost:3000) or the port you have availab
 
 I've created a responsive and interactive dashboard for an e-commerce wine store using React and TypeScript, styled with Tailwind CSS.
 
-I've used Chart.js and react-chartjs-2 render the charts efficiently, and I've also used react-rating-stars-component to display rating stars in the Review component. I used jsPDF library to generate a downloadable report (pdf).
+I've used Chart.js and react-chartjs-2 to render the charts efficiently, and I've also used react-rating-stars-component to display rating stars in the Review component. I used jsPDF library to generate a downloadable report (pdf).
 
 ## Future improvments
 
