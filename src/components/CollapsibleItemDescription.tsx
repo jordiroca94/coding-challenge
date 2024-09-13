@@ -1,14 +1,8 @@
 import Image from "next/image";
 import ImgPlaceholder from "../../public/images/winePlaceholder.jpg";
+import { WineItemType } from "@/types/common";
 
-type Props = {
-  country: string;
-  stock: number;
-  price: number;
-  flavor: string;
-  smell: string;
-  description: string;
-};
+type WineItemDescriptionType = Pick<WineItemType, 'country' | 'stock' | 'price'| 'flavor'| 'smell'| 'description'>;
 
 const CollapsibleItemDescription = ({
   country,
@@ -17,7 +11,7 @@ const CollapsibleItemDescription = ({
   flavor,
   smell,
   description,
-}: Props) => {
+}: WineItemDescriptionType) => {
   return (
     <>
       <Image
