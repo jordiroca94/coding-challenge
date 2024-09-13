@@ -34,7 +34,7 @@ const TrendsChart = ({ reviews_last_12_months, reviews_last_month }: Props) => {
   const [chartLabels, setChartLabels] = useState(
     reviews_last_12_months.map((data) => data.month)
   );
-  const [chartData, setChartData] = useState(
+  const [chartData, setChartData] = useState<(number | null)[]>(
     reviews_last_12_months.map((data) => data.rate)
   );
 
