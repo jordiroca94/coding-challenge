@@ -5,7 +5,7 @@ type Props = {
   reviews_last_12_months: Last12MonthsReviewsType;
   reviews_last_month: LastMonthReviewsType;
   setChartLabels: (value: string[]) => void;
-  setChartData: (value: number[]) => void;
+  setChartData: (value:  (number | null)[]) => void;
 };
 
 const CustomTrendsChartToggleButton = ({
@@ -87,7 +87,6 @@ const CustomTrendsChartToggleButton = ({
         }`}
         onClick={() => (
           setChartLabels(reviews_last_month.map((data) => data.day)),
-          // @ts-ignore
           setChartData(reviews_last_month.map((data) => data.rate)),
           setToggle(4)
         )}

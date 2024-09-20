@@ -6,7 +6,7 @@ const Introduction = () => {
   return (
     <div className="col-span-4 lg:col-span-10 lg:col-start-2 text-center">
       <h1 className="text-3xl lg:text-5xl font-semibold text-primary mb-6 uppercase">
-        Jordi's Winehouse
+        Jordi&#39;s Winehouse
       </h1>
       <div className="w-full flex justify-center">
         <p className="text-lg py-6 lg:w-2/3 border-b-2 border-t-2 border-primary">

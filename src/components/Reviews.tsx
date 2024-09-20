@@ -1,5 +1,4 @@
 import { ReviewType } from "@/types/common";
-// @ts-ignore
 import ReactStars from "react-rating-stars-component";
 
 type Props = {
